@@ -1,5 +1,5 @@
 module "network" {
-  source = "../../modules/network"
+  source = "../../modules/VPC"
   name   = var.name
   cidr   = var.vpc_cidr
   azs    = var.azs
