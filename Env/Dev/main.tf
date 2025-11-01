@@ -3,7 +3,8 @@ module "network" {
   name   = var.name
   cidr   = var.vpc_cidr
   azs    = var.azs
-  public_cidrs = var.public_cidrs
+  public_subnets_cidrs  = var.public_subnets_cidrs
+  private_subnets_cidrs = var.private_subnets_cidrs
 }
 
 resource "aws_security_group" "ec2_sg" {
