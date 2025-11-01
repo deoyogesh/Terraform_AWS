@@ -9,3 +9,11 @@ variable "admin_cidr"     { default = "0.0.0.0/0" }
 variable "ec2_ami"        { default = "ami-0f58b397bc5c1f2e8" }
 variable "instance_type"  { default = "t3.micro" }
 variable "ssh_key_name"   { default = "my-key" }
+variable "aws_access_key" {
+  type      = string
+  sensitive = true
+}
+variable "aws_secret_key" {
+  type      = string
+  sensitive = true
+}
